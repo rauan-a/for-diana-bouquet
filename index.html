@@ -193,7 +193,7 @@ function typeMsg() {
   typed = true; const el = document.getElementById("msg"); let i = 0;
   timer = setInterval(() => { el.textContent = MESSAGE.slice(0, ++i); if (i >= MESSAGE.length) clearInterval(timer); }, 70);
 }
-document.getElementById("title").textContent = "Для " + NAME + " 🌸";
+document.getElementById("title").textContent = "Для любимой " + NAME + " <3";
 document.getElementById("replay").onclick = () => {
   clearInterval(timer); typed = false; t0 = performance.now();
   document.getElementById("msg").textContent = "";
